@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: lightgray;
+}
+
+header{
+    background-color: lightgrey;
+    font-size: 30px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    min-height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.logoNav{
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: default;
+}
+
+.logoNav:hover {
+    text-decoration: underline;
+}
+.menuNav{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding-right: 25px;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+.login {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 20px;
+}
+
+.kiri {
+    margin-left: 50px;
+}
+.sebelahKiri{
+    display: flex;
+    margin-top: 5px;
+    padding: 10px 10px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    border-top: 2px solid;
+}
+input {
+    width: 100%;
+    margin: 2px;
+    border: 1.5px solid black;
+    border-radius:  5px;
+}
+label {
+    font-size: 16px;
+    font-weight: 500;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    width: 350px;
+    background: lightblue;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.gambar1{
+    width: 810px;
+}
+
+.foto{
+    background-color: white;
+    padding: 10px 10px;
+    margin-top: 5px;
+}
+
+aside{
+    background-color: aqua;
+    display: flex;
+    gap: 2rem;
+    border-radius: 10px;
+}
+.aside {
+    background-color: lightgoldenrodyellow;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 1);
+    padding: 10px 10px;
+    height: fit-content;
+}
+.logoKelas{
+    width: 280px;
+    border-radius: 10px;
+}
+aside li{
+    list-style: none;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+        font-size: 25px;
+        align-items: center;
+    }
+    nav li a {
+        font-size: 12px;
+    }
+    .sebelahKiri{
+       width: 80%;
+    }
+    button {
+        width: 60%;
+    }
+    input {
+        width: 40%;
+    }
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .foto {
+        width: 80%;
+        justify-content: center;
+    }
+    .gambar1 {
+        width: 100%;
+    }
+    .gambarLogin {
+        width: 40%;
+    }
+    footer {
+        font-size: 15px;
+    }
+    aside{
+        width: 60%;
+    }
+    .aside {
+        width: 70%;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoKelas{
+        width: 100%;
+    }
+}
